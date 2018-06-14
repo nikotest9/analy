@@ -1,11 +1,3 @@
-
-import { init } from '../initfunction.js';
-
-
-let triggerHelp = 0;
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
   if (document.querySelectorAll('.tabContainer').length && document.querySelectorAll('.sectionsContainer').length) {
     var activeTab = document.querySelector('.tabContainer').querySelector('.tabs .tab:first-child');
@@ -106,11 +98,6 @@ var app = {
       this.classList.add('active');
       newSection.classList.add('active');
 
-      var triggerId = this.id;
-      if (triggerHelp==0 & triggerId=="trigger") {
-          init()
-      triggerHelp = 1;
-    };
     },
     contain: function(container) {
 

@@ -17,12 +17,6 @@ require('./chart4.js');
 
 
 
-
-
-// d3.select("#trigger")
-//   .on("click", init)
-
-
 $(document).ready(function() {
 
   $(".btn").on("click", function() {
